@@ -39,6 +39,6 @@ class OpenAIModelAPI:
         if api_url_w is not None:
             self._api_url = api_url_w
             self._api_key = os.getenv("NN_AI_MARKETPLACE_API_TOKEN")  # pyright: ignore[reportAssignmentType]
-            self._model = "openai_gpt_nano_latest"  # "openai_gpt6_luna"
+            self._model = "gpt-5-nano" # "openai_gpt4o_mini"  # "openai_gpt6_luna"
 
         self._api = OpenAI(base_url=self._api_url, api_key=self._api_key)
